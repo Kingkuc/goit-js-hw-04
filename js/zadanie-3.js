@@ -9,7 +9,7 @@ const profile = {
     this.playTime += hours;
     },
     getInfo(){
-        console.log(`${newName} ma ${this.playTime} aktywnych godzin!`);
+        console.log(`${newName} ma ${playTime} aktywnych godzin!`);
     }
 };
 
