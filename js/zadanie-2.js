@@ -8,7 +8,8 @@ function calcAverageCalories(days) {
         caloriesPerDay.push(days.calories);
         totalCalories += day.calories;
     }
-    return totalCalories / caloriesPerDay.length.toFixed(1);
+    return totalCalories / caloriesPerDay.length;
+
 
 }
 
