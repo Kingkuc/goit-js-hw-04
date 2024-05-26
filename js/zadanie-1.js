@@ -1,15 +1,13 @@
 // Zadanie 1. Pakowanie towarów
 function isEnoughCapacity(products, containerSize) {
+    let totalValue = 0;
         const values = Object.values(products);
-        let totalValue = 0;
 
         for (const value of values) {
             totalValue += value;
         }
         
-        if (totalValue <= containerSize) {
-            return true;
-        }   else return false;
+        return totalValue <= containerSize;
         
 }
 

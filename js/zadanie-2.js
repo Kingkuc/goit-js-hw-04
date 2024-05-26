@@ -4,11 +4,11 @@ function calcAverageCalories(days) {
     const caloriesPerDay = [];
     let totalCalories = 0;
 
-    for (const singleDay of days) {
+    for (const day of days) {
         caloriesPerDay.push(days.calories);
-        totalCalories += days.calories;
+        totalCalories += day.calories;
     }
-    const averageCalories = (totalCalories / caloriesPerDay.length).toFixed(1);
+    return totalCalories / caloriesPerDay.length.toFixed(1);
 
 }
 
